@@ -1,0 +1,537 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Detection Bronkopneumonia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 ">
+                            <div class="social_media_links">
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i> bramantio.syahrul@mhs.itenas.ac.id</a></li>
+                                    <li><a href="#"> <i class="fa fa-phone"></i> +62 878 7288 7925</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                              <a class="navbar-brand text-dark fw-bold fs-4" href="/" style="text-decoration: none;">
+                                🩺 Detection Bronkopneumonia
+                              </a>
+                            </div>
+                          </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="/">home</a></li>
+                                        
+                                        <li><a href="single-blog.html">blog</i></a>
+                                           
+                                        </li>
+                                        <li><a href="about.html">about</a></li>
+                                    
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                    <a class="" href="health.html">cek kesehatan anda </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <div class="single_slider  d-flex align-items-center slider_bg_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text ">
+                                <h3> <span>Deteksi Dini</span> <br>
+                                    Bronkopneumonia <br>Secara Otomatis </h3>
+                                <p>Sistem berbasis Machine Learning untuk membantu identifikasi <br>
+                                    bronkopneumonia dari citra X-ray secara cepat dan akurat.</p>
+                                <a href="health.html" class="boxed-btn3">Cek Kesehatan Anda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider  d-flex align-items-center slider_bg_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text ">
+                                <h3> <span>Analisis Citra X-Ray</span> <br>
+                                    Menggunakan Teknologi Terkini </h3>
+                                <p>Ekstraksi fitur GLCM dan HOG serta klasifikasi menggunakan <br> Support Vector Machine (SVM) dengan PCA.</p>
+                                <a href="#" class="boxed-btn3">Pelajari Metode Kami</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider  d-flex align-items-center slider_bg_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text ">
+                                <h3> <span>Akses Mudah</span> <br>
+                                    Melalui Perangkat Mobile </h3>
+                                <p>Aplikasi web ini dirancang khusus untuk digunakan di ponsel  <br> oleh masyarakat umum secara efisien dan nyaman.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- service_area_start -->
+    <div class="service_area">
+        <div class="container p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service">
+                        <div class="icon">
+                            <i class="flaticon-electrocardiogram"></i>
+                        </div>
+                        <h3>Deteksi Cepat</h3>
+                        <p>Identifikasi bronkopneumonia secara otomatis menggunakan citra X-ray dengan akurasi tinggi berbasis SVM.</p>
+                        <a href="/kesehatan" class="boxed-btn3-white">Mulai Deteksi Sekarang</a>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service">
+                        <div class="icon">
+                            <i class="flaticon-emergency-call"></i>
+                        </div>
+                        <h3>Respons Medis Dini</h3>
+                        <p>Deteksi awal membantu mempercepat pengambilan keputusan medis terhadap gejala pneumonia yang terdeteksi.</p>
+                        <a href="/tentang" class="boxed-btn3-white">Pelajari Lebih Lanjut</a>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service">
+                        <div class="icon">
+                            <i class="flaticon-first-aid-kit"></i>
+                        </div>
+                        <h3>Akses Mudah</h3>
+<p>Aplikasi web ramah pengguna yang dapat digunakan oleh masyarakat umum melalui ponsel atau komputer.</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service_area_end -->
+
+    <!-- welcome_docmed_area_start -->
+    <div class="welcome_docmed_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src=".././static/img/about/1.jpeg" alt="">
+                        </div>
+                        <div class="thumb_2" style="width: 350px;">
+                            <img src=".././static/img/about/2.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h2>Selamat Datang di Sistem Deteksi Bronkopneumonia</h2>
+                        <h3>Solusi Cerdas untuk <br>
+                            Deteksi Dini Penyakit Paru</h3>
+                        <p>Aplikasi ini dirancang untuk membantu mendeteksi bronkopneumonia dari citra X-ray secara otomatis menggunakan algoritma machine learning dengan pendekatan ekstraksi fitur GLCM, HOG, dan LBP.</p>
+                        <ul>
+                            <li> <i class="flaticon-right"></i> Akurasi tinggi menggunakan model Support Vector Machine (SVM).</li>
+                            <li> <i class="flaticon-right"></i> Ekstraksi fitur citra berbasis tekstur dan tepi.</li>
+                            <li> <i class="flaticon-right"></i> Dapat diakses langsung melalui perangkat mobile.</li>
+                        </ul>
+                        <a href="/tentang" class="boxed-btn3-white-2">Pelajari Lebih Lanjut</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- welcome_docmed_area_end -->
+
+    <!-- testmonial_area_start -->
+    <div class="testmonial_area">
+        <div class="testmonial_active owl-carousel">
+            <div class="single-testmonial testmonial_bg_1 overlay2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 offset-xl-1">
+                            <div class="testmonial_info text-center">
+                                <div class="quote">
+                                    <i class="flaticon-straight-quotes"></i>
+                                </div>
+                                <p>
+                                    Awalnya saya ragu dengan aplikasi ini, tapi setelah mencoba unggah foto X-ray anak saya, hasilnya sangat membantu sebagai langkah awal sebelum ke dokter. Antarmukanya juga mudah digunakan!
+                                  </p>
+                                  <div class="testmonial_author">
+                                    <h4>Sinta Rahayu</h4>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-testmonial testmonial_bg_2 overlay2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 offset-xl-1">
+                            <div class="testmonial_info text-center">
+                                <div class="quote">
+                                    <i class="flaticon-straight-quotes"></i>
+                                </div>
+                                <p>
+                                    Aplikasi ini sangat berguna untuk masyarakat umum. Saya bisa cek indikasi bronkopneumonia dari rumah tanpa harus antri ke klinik dulu. Semoga makin dikembangkan ke penyakit lain juga!
+                                  </p>
+                                  <div class="testmonial_author">
+                                    <h4>Ahmad Fajar</h4>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- testmonial_area_end -->
+
+
+
+    <!-- expert_doctors_area_start -->
+    <div class="expert_doctors_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="doctors_title mb-4 text-center">
+                        <h3>Personil Penelitian</h3>
+                        <p>Berikut adalah tim yang terlibat dalam pengembangan sistem deteksi bronkopneumonia ini.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+    
+                <!-- Mahasiswa -->
+                <div class="col-md-4">
+                    <div class="single_expert text-center">
+                        <div class="expert_thumb mb-3">
+                            <img src=".././static/img/experts/mahasiswa.png" alt="Foto Mahasiswa" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
+                        </div>
+                        <div class="experts_name">
+                            <h4>Bramantio Syahrul Alam</h4>
+                            <span>Pengembang & Peneliti</span>
+                            <p class="mt-2">Pengembang sistem deteksi otomatis bronkopneumonia berbasis citra X-ray dan SVM.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Dosen Pembimbing -->
+                <div class="col-md-4">
+                    <div class="single_expert text-center">
+                        <div class="expert_thumb mb-3">
+                            <img src=".././static/img/experts/mahasiswa.png" alt="Foto Dosen" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
+                        </div>
+                        <div class="experts_name">
+                            <h4>Dr. Jasman Pardede, S.Si., M.T</h4>
+                            <span>Pembimbing Penelitian</span>
+                            <p class="mt-2">Pembimbing akademik dan pengarah metodologi penelitian berbasis machine learning.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- expert_doctors_area_end -->
+
+    <!-- Emergency_contact start -->
+    <div class="Emergency_contact">
+        <div class="conatiner-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <div class="single_emergency d-flex align-items-center justify-content-center emergency_bg_1 overlay_skyblue">
+                        <div class="info">
+                            <h3>    Teknologi bukan hanya tentang inovasi, tapi tentang menyelamatkan nyawa</h3>
+                            <p> Sistem Deteksi Dini Bronkopneumonia.</p>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="single_emergency d-flex align-items-center justify-content-center emergency_bg_2 overlay_skyblue">
+                        <div class="info">
+                            <h3>    Satu langkah kecil untuk cek kesehatan untuk awal hidup yang lebih sehat.</h3>
+                            <p> Deteksi Sekarang, Selamatkan Diri Anda</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Emergency_contact end -->
+
+<!-- footer start -->
+    <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-lg-4">
+                            <div class="footer_widget">
+                                <div class="footer_logo">
+                                    <a href="/" style="color: white; font-weight: bold; font-size: 20px; text-decoration: none;">
+                                        🩺 Detection Bronkopneumonia
+                                    </a>
+                                </div>
+                                <p>
+                                    Aplikasi ini dirancang untuk membantu mendeteksi kemungkinan bronkopneumonia dari citra X-ray secara cepat dan akurat.
+                                </p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-twitter-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                           
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Useful Links
+                                </h3>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#"> Contact</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Address
+                                </h3>
+                                <p>
+                                    Jl. Khp Hasan Mustopa No.23, Neglasari, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40124 <br>
+                                    +62 878 7288 7925 <br>
+                                    bramantio.syahrul@mhs.itenas.ac.id
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                <p style="color: white; margin-top: 20px;">
+                                    &copy; <script>document.write(new Date().getFullYear());</script> Aplikasi Deteksi Bronkopneumonia |</strong> 
+                                  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!-- footer end  -->
+    <!-- link that opens popup -->
+
+    <!-- form itself end-->
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <h3>Make an Appointment</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <input id="datepicker" placeholder="Pick date">
+                        </div>
+                        <div class="col-xl-6">
+                            <input id="datepicker2" placeholder="Suitable time">
+                        </div>
+                        <div class="col-xl-6">
+                            <select class="form-select wide" id="default-select" class="">
+                                <option data-display="Select Department">Department</option>
+                                <option value="1">Eye Care</option>
+                                <option value="2">Physical Therapy</option>
+                                <option value="3">Dental Care</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-6">
+                            <select class="form-select wide" id="default-select" class="">
+                                <option data-display="Doctors">Doctors</option>
+                                <option value="1">Mirazul Alom</option>
+                                <option value="2">Monzul Alom</option>
+                                <option value="3">Azizul Isalm</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="text"  placeholder="Name">
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="text"  placeholder="Phone no.">
+                        </div>
+                        <div class="col-xl-12">
+                            <input type="email"  placeholder="Email">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed-btn3">Confirm</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+    <!-- JS here -->
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/ajax-form.js') }}"></script>
+<script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/scrollIt.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='js/gijgo.min.js') }}"></script>
+<!-- contact js -->
+<script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.form.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script> -->
+</body>
+
+</html>
