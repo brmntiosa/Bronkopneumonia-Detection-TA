@@ -7,3 +7,4 @@ pandas
 matplotlib
 seaborn
 joblib
+Pillow==11.1.0
