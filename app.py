@@ -3,8 +3,7 @@ import joblib
 import numpy as np
 from flask import Flask, request, render_template
 from werkzeug.utils import secure_filename
-from skimage.io import imread
-from skimage.transform import resize
+from PIL import Image  # Ganti dari skimage.io
 from skimage.feature import graycomatrix, graycoprops, hog
 
 # === CONFIG ===
@@ -20,15 +19,16 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 def extract_glcm_hog_features(image_path):
-    image = imread(image_path, as_gray=True)
-    image_resized = resize(image, (128, 128), anti_aliasing=True)
-    image_uint8 = (image_resized * 255).astype('uint8')
+    # Pakai Pillow agar tidak error dengan gambar HP
+    image = Image.open(image_path).convert('L')  # Grayscale
+    image = image.resize((128, 128))
+    image_np = np.array(image)
 
-    glcm = graycomatrix(image_uint8, distances=[1], angles=[0], levels=256, symmetric=True, normed=True)
+    glcm = graycomatrix(image_np, distances=[1], angles=[0], levels=256, symmetric=True, normed=True)
     glcm_props = ['contrast', 'dissimilarity', 'homogeneity', 'energy', 'correlation', 'ASM']
     glcm_features = [graycoprops(glcm, prop)[0, 0] for prop in glcm_props]
 
-    hog_features = hog(image_uint8,
+    hog_features = hog(image_np,
                        orientations=9,
                        pixels_per_cell=(8, 8),
                        cells_per_block=(2, 2),
@@ -69,11 +69,9 @@ def kesehatan():
 
     return render_template('health.html', prediction=None)
 
-   
 @app.route('/contact.html')
 def contact():
     return render_template('contact.html')
-
 
 @app.route('/artikel/<int:artikel_id>')
 def artikel_detail(artikel_id):
